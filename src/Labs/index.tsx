@@ -5,6 +5,7 @@ export default function Labs() {
     <div>
       <h1>Labs</h1>
       <ul>
+        Nikita Clark
         <li><a href="#lab1">Lab 1</a></li>
         <li><a href="#lab2">Lab 2</a></li>
         <li><a href="#lab3">Lab 3</a></li>
@@ -19,5 +20,5 @@ export default function Labs() {
       </p>
     </div>
   );
-  
+
 }
