@@ -1,5 +1,6 @@
 import CoursesNavigation from "./Navigation";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/Editor";
 
 import Modules from "./Modules";
 import Home from "./Home";
@@ -26,6 +27,7 @@ export default function Courses() {
                      element={<h3>Assignment Editor</h3>} />
               <Route path="People" element={<h3>People</h3>} />
               <Route path="Assignments" element={<Assignments />} />
+              <Route path="Assignments/:aid" element={<AssignmentEditor />} />
 
             </Routes>
           </td>
