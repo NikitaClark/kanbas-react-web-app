@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function AssignmentEditor() {
-  // You can use state to manage the form values if needed
+  
   const [name, setName] = useState("A1 - ENV + HTML");
   const [description, setDescription] = useState(
     "The assignment is available online. Submit a link to the landing page of"
