@@ -1,15 +1,16 @@
-import React from 'react';
-import Labs from './Labs';  // Import the Labs component
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* Render the Labs component */}
-        <Labs />
-      </header>
-    </div>
-  );
-}
-
-export default App;
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
+import Labs from "./Labs";
+import Kanbas from "./Kanbas";
+export default function App() {
+ return (
+  <HashRouter>
+   <div>
+    <Routes>
+     <Route path="/" element={<Navigate to="Kanbas"/>}/>
+     <Route path="/Labs/*" element={<Labs />} />
+     <Route path="/Kanbas/*" element={<Kanbas />} />
+    </Routes>
+   </div>
+  </HashRouter>
+);}

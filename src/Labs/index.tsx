@@ -1,25 +1,19 @@
-import React from "react";
-
+import Lab1 from "./Lab1";
+import { Route, Routes, Navigate } from "react-router";
+import TOC from "./TOC";
+import Lab2 from "./Lab2";
+import Lab3 from "./Lab3";
 export default function Labs() {
   return (
     <div>
-      <h1>Nikita Clark</h1>
       <h1>Labs</h1>
-      <ul>
-        <li><a href="#lab1">Lab 1</a></li>
-        <li><a href="#lab2">Lab 2</a></li>
-        <li><a href="#lab3">Lab 3</a></li>
-        {/* Add more labs as needed */}
-        <li><a href="#kanbas">Kanbas</a></li>
-      </ul>
-      {/* Add the GitHub link */}
-      <p>
-        <a href="https://github.com/NikitaClark/kanbas-react-web-app" id="wd-github">
-          View the GitHub Repository
-        </a>
-      </p>
+      <TOC />
+      <Routes>
+        <Route path="/" element={<Navigate to="Lab1" />} />
+        <Route path="Lab1" element={<Lab1 />} />
+        <Route path="Lab2" element={<Lab2 />} />
+        <Route path="Lab3" element={<Lab3 />} />
+      </Routes>
     </div>
   );
-  
-
 }
