@@ -3,6 +3,7 @@ import React from "react";
 export default function Labs() {
   return (
     <div>
+      <h1>Nikita Clark</h1>
       <h1>Labs</h1>
       <ul>
         <li><a href="#lab1">Lab 1</a></li>
@@ -20,4 +21,5 @@ export default function Labs() {
     </div>
   );
   
+
 }
